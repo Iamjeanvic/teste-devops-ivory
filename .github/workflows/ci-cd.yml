@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: baixar o projeto
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
         with:
           fetch-depth: 0
 
@@ -25,7 +25,7 @@ jobs:
         run: ls -la
 
       - name: Analisar código com SonarCloud
-        uses: SonarSource/sonarqube-scan-action@v8
+        uses: SonarSource/sonarqube-scan-action@7006c4492b2e0ee0f816d36501671557c97f5995
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           
