@@ -4,7 +4,13 @@ on:
   push:
     branches:
       - main
-
+  
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,8 +18,15 @@ jobs:
     steps:
       - name: baixar o projeto
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: mostrar arquivos do projeto
         run: ls -la
+
+      - name: Analisar código com SonarCloud
+        uses: SonarSource/sonarqube-scan-action@v8
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
   
       
