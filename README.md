@@ -33,3 +33,11 @@ O pipeline executa:
 - análise de qualidade utilizando SonarCloud.
 
 ---
+
+# Conclusão 
+
+Este projeto representou uma importante oportunidade de aprendizado e prática na área de DevOps. Durante o desenvolvimento, aprofundei meus conhecimentos em Git, GitHub Actions, SonarCloud e serviços da AWS, compreendendo melhor como esses recursos se integram em uma pipeline de CI/CD. 
+
+Gostaria de destacar que utilizei Inteligência Artificial como ferramenta de apoio ao longo do projeto. Seu uso teve como objetivo esclarecer dúvidas, explicar conceitos e orientar a implementação das soluções, e não realizar o trabalho de forma automática. Cada etapa foi executada por mim, buscando compreender o funcionamento das ferramentas e os motivos de cada configuração realizada. 
+
+A experiência permitiu não apenas concluir o desafio proposto, mas também ampliar significativamente meus conhecimentos em práticas de DevOps, fortalecendo minha base para atuar e continuar evoluindo na área. 
