@@ -1,0 +1,19 @@
+name: CI/CD Pipeline
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: baixar o projeto
+        uses: actions/checkout@v4
+
+      - name: mostrar arquivos do projeto
+        run: ls -la
+  
+      
